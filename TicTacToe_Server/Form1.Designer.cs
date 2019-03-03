@@ -46,6 +46,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.tbxIP = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbxPort = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -178,7 +182,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(177, 12);
+            this.button1.Location = new System.Drawing.Point(179, 44);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 23);
             this.button1.TabIndex = 3;
@@ -200,7 +204,7 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(318, 416);
+            this.label3.Location = new System.Drawing.Point(273, 396);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(129, 15);
             this.label3.TabIndex = 4;
@@ -209,7 +213,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(195, 396);
+            this.button2.Location = new System.Drawing.Point(190, 373);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
@@ -228,11 +232,50 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Всего: 0";
             // 
+            // tbxIP
+            // 
+            this.tbxIP.Location = new System.Drawing.Point(114, 9);
+            this.tbxIP.Name = "tbxIP";
+            this.tbxIP.ReadOnly = true;
+            this.tbxIP.Size = new System.Drawing.Size(139, 20);
+            this.tbxIP.TabIndex = 8;
+            this.tbxIP.Text = "любой";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(87, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(21, 15);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "IP:";
+            // 
+            // tbxPort
+            // 
+            this.tbxPort.Location = new System.Drawing.Point(305, 9);
+            this.tbxPort.Name = "tbxPort";
+            this.tbxPort.Size = new System.Drawing.Size(65, 20);
+            this.tbxPort.TabIndex = 8;
+            this.tbxPort.Text = "8003";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(259, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(40, 15);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Порт:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 438);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.tbxPort);
+            this.Controls.Add(this.tbxIP);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
@@ -248,7 +291,9 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Игрок 1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -283,6 +328,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tbxIP;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbxPort;
+        private System.Windows.Forms.Label label6;
     }
 }
 
